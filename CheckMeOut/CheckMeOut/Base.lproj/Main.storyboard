@@ -259,7 +259,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pcy-aP-U6r">
-                                <rect key="frame" x="0.0" y="63" width="600" height="537"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
@@ -267,12 +267,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9x-EJ-TKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1962" y="1311"/>
+            <point key="canvasLocation" x="2774" y="1311"/>
         </scene>
-        <!--Checked Out-->
+        <!--Table View Controller-->
         <scene sceneID="zhf-KA-XrC">
             <objects>
                 <tableViewController id="uRw-7F-25a" sceneMemberID="viewController">
@@ -283,7 +285,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="deY-hz-m05" detailTextLabel="u4m-T2-f54" style="IBUITableViewCellStyleSubtitle" id="Fk0-VK-UAl">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fk0-VK-UAl" id="e4x-br-oUi">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -319,11 +321,11 @@
                             <outlet property="delegate" destination="uRw-7F-25a" id="fmD-aA-KMz"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Checked Out" id="Nl6-5w-y9X"/>
+                    <navigationItem key="navigationItem" id="qJk-Kj-wHg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmW-4g-clu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="1311"/>
+            <point key="canvasLocation" x="1962" y="1311"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="X4E-EH-Z66">
@@ -337,7 +339,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ifU-6U-IGi" kind="relationship" relationship="viewControllers" id="Wr0-7X-Zom"/>
-                        <segue destination="uRw-7F-25a" kind="relationship" relationship="viewControllers" id="p2p-z3-Z9E"/>
+                        <segue destination="B0T-Js-iEJ" kind="relationship" relationship="viewControllers" id="p2p-z3-Z9E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xnh-HM-2rz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -363,6 +365,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcD-0x-cWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1150" y="399"/>
+        </scene>
+        <!--Checked Out-->
+        <scene sceneID="jtO-4b-3FC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B0T-Js-iEJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Checked Out" id="Nl6-5w-y9X"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PTT-IY-DNd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uRw-7F-25a" kind="relationship" relationship="rootViewController" id="GpV-JH-SAY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tap-mT-VQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="1311"/>
         </scene>
     </scenes>
 </document>
